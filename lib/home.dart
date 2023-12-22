@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: const Text('Workout'),
       ),
-      floatingActionButton: (_selected == 1)
+      floatingActionButton: (_selected == 2)
           ? FloatingActionButton(
               onPressed: () {
                 if (_selected == 0) {
@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
                     ),
                   );
                 }
-                if (_selected == 1) {
+                if (_selected == 2) {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) => const AddWorkPlan(),
@@ -85,6 +85,11 @@ class _HomeState extends State<Home> {
           if (_selected == 1)
             SizedBox(
               height: MediaQuery.of(context).size.height,
+              child: const Workoutlist(),
+            ),
+          if (_selected == 2)
+            SizedBox(
+              height: MediaQuery.of(context).size.height,
               child: Workoutplan(),
             ),
         ],
@@ -94,6 +99,10 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
             label: 'Home',
             icon: Icon(Icons.home),
+          ),
+          BottomNavigationBarItem(
+            label: 'Workout List',
+            icon: Icon(Icons.accessibility_new_outlined),
           ),
           BottomNavigationBarItem(
             label: 'Workout Plan',
