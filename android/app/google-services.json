@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "552207324512",
+    "project_id": "workout-cf2d1",
+    "storage_bucket": "workout-cf2d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552207324512:android:193ec3d791cfcb355c3a05",
+        "android_client_info": {
+          "package_name": "com.example.workout"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdHSS5-1q1MGn1TTpybyAIGX9P-2Lewec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
